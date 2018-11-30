@@ -6,10 +6,60 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+
+    <div id="presentacion">
+      <h1>CIFRADO CESAR</h1>
+      <h3>La seguridad, lo primero en mira</h3>
+      <p1>Cumplimos con las exigencias de seguridad chilenas y europeas</p1>
+      <br>
+      <p1>Tus datos personales protegidos bajo la ley: RGDP</p1>
+      <br>
+      <p1>Verificados por expertos en privacidad digital</p1>
+      <br>
+      <br>
+      <div id="botones1">
+        <button onclick="comenzarApp()" id="boton1">COMENZAR A CIFRAR / DESCIFRAR</button>
+        <button onclick="obtenerExplicacion()" id="boton2">SABER COMO FUNCIONA</button>
+        
+      </div>
     </div>
-    <script src="cipher.js"></script>
+
+    <div id="explicacion">
+      <h2>Explicacion del Cifrado Cesar</h2>
+      <h4>Explicacion</h4>
+      <div id="botones2">
+        <button onclick="comenzarApp()" id="boton3">COMENZAR A CIFRAR / DESCIFRAR</button>
+        <button onclick="volverInicio()" id="boton4">VOLVER A INICIO</button>
+        
+      </div>
+    </div>
+
+    <div id="cifrado">
+      <h2 id="contraseña">INGRESA TU CONTRASEÑA</h2>
+      
+      <br>
+      <input type="text" id="pass" value="">
+      <br>
+      <br>
+      <h2 id="semana">INGRESA TU SEMANA</h2>
+      
+      <br>
+      <input type="text" id="week" value="">
+      <br>
+      <br>
+      <div id="botones3">
+        <button onclick="cifrar()" id="boton5">CIFRAR</button>
+        <button onclick="descifrar()" id="boton6">DESCIFRAR</button>
+        <br>
+        <button onclick="volverInicio()" id="boton7">VOLVER A INICIO</button>
+      </div>
+    </div>
+    
     <script src="index.js"></script>
+    <script src="cipher.js"></script>
+    
   </body>
 </html>
+
+<!-- input type="text" placeholder="Escribe aquí" maxlength="1000" id="codificar" class="cuadroTexto"> -->
+  <!-- codigo sobre id para ocupar en los parametros de cipher   -->
