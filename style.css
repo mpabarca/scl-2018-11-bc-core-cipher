@@ -242,7 +242,7 @@ h4{
     font-size: 20px;
     font-weight: 500px;
     font-family: "Open Sans", Regular;
-    left: 29em;    
+    left: 27.5em;    
 
 }
 
@@ -256,7 +256,7 @@ h4{
     background-color: white;
     border-radius: 6px;
     border: 2px solid #0096CA;
-    left: 27.5em;
+    left: 26.5em;
 }
 
 #semana{
@@ -269,7 +269,7 @@ h4{
     left: 30em; 
 }
 
-#week{
+#day{
     text-align: center;
     position: relative;
     font-size:20px;
@@ -279,7 +279,7 @@ h4{
     background-color: white;
     border-radius: 6px;
     border: 2px solid #0096CA;
-    left: 29em;
+    left: 31.5em;
     
 
 }
