@@ -1,21 +1,26 @@
 window.cipher = {
   encode: (offset,password) => {
-    let ascii;
+    //let ascii='';
     let result="";
-    //let letra="";
-    for (let i=0; i<password.length;i++){
-      console.log(password.chartCodeAt(i));
-      ascii=password.chartCodeAt(i);
-      result+= String.fromCharCode(ascii + offset);
-      //let nuevo=(ascii - 65 + offset)%26 + 65;
+    let letra="";
+    for (let i=0; i<password.length; i++){
+      let ascii=password.charCodeAt(i);
+      let nuevo=((ascii - 65 + (offset))%26) + 65;
       //nuevo= función fórmula para nuevo asccii con el desplazamiento de michelle
       //en nuevo usar offset entregado
-      //letra=nuevo.fromCharCodeAt();
-      //result+=letra
+      letra= String.fromCharCode(nuevo);
+      result+=letra
     }
-    return result
+    //for (let i=0; i<password.length;i++){
+    
+    //  result+= String.fromCharCode(ascii + offset);
+  
+      return result;
+    }
+  }
+    
 
-  },
+/*
   decode: (offset,password) => {
     let ascii;
     let result_decodificar="";
@@ -30,3 +35,4 @@ window.cipher = {
   return result_decodificar
   
 };
+*/

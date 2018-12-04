@@ -11,6 +11,7 @@ Document Object Model*/
 //let offset = document.getElementById("cajaOffset").value
 
 //id=presentacion
+
 function obtenerExplicacion() {
     
     let div = document.getElementById("presentacion");
@@ -19,6 +20,8 @@ function obtenerExplicacion() {
     div2.style.display = "block";
     let div3 = document.getElementById("cifrado");
     div3.style.display = "none";
+    let div4= document.getElementById("resultado");
+    div4.style.display = "none";
 }
 
 //id=explicacion
@@ -30,6 +33,8 @@ function volverInicio(){
     div2.style.display = "none";
     let div3 = document.getElementById("cifrado");
     div3.style.display = "none";
+    let div4= document.getElementById("resultado");
+    div4.style.display = "none";
 
 }
 
@@ -41,18 +46,35 @@ function comenzarApp(){
     div2.style.display = "none";
     let div3 = document.getElementById("cifrado");
     div3.style.display = "block";  
+    let div4= document.getElementById("resultado");
+    div4.style.display = "block";
+}
+
+//id=resultado
+function resultado (){
+    let div = document.getElementById("presentacion");
+    div.style.display = "none";
+    let div2 = document.getElementById("explicacion");
+    div2.style.display = "none";
+    let div3 = document.getElementById("cifrado");
+    div3.style.display = "block";  
+    let div4= document.getElementById("resultado");
+    div4.style.display = "block";
 }
 
 
-
 function cifrar() {
-    let contraseña=document.getElementById("pass").value;
-    let desplazamiento=document.getElementById("desp").value;
-    cipher.encode(desplazamiento,contraseña);
+    let password=document.getElementById("pass").value;
+    let offset=document.getElementById("day").value;
+    let result =window.cipher.encode(offset,password);
+    document.getElementById("box").value = result;
+
 }
 
 function descifrar() {
     let contraseña=document.getElementById("pass").value;
-    let desplazamiento=document.getElementById("desp").value;
+    let desplazamiento=document.getElementById("day").value;
     cipher.decode(desplazamiento,contraseña);
 }
+
+
