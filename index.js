@@ -72,9 +72,10 @@ function cifrar() {
 }
 
 function descifrar() {
-    let contraseña=document.getElementById("pass").value;
-    let desplazamiento=document.getElementById("day").value;
-    cipher.decode(desplazamiento,contraseña);
+    let password=document.getElementById("pass").value;
+    let offset=document.getElementById("day").value;
+    let result =window.cipher.decode(offset,password);
+    document.getElementById("box").value = result;
 }
 
 

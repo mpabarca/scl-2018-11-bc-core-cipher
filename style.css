@@ -10,6 +10,8 @@
     display : none; 
 }
 
+
+
 .header {
     overflow: hidden;
     background-color: white;
@@ -235,19 +237,41 @@ h4{
     
 }
 
+#ingresar{
+    text-align: center;
+}
+
+#ingresar1{
+    display: inline-block;
+    text-align: center;
+    margin-left: 0%;
+    background-color: white;
+    border: none;
+    width: 30%;
+}
+
+#ingresar2{
+    display: inline-block;
+    text-align: center;
+    margin-right: 10%;
+    background-color: white;
+    border: none;
+    
+}
+
 #contraseña{
-    position: relative;
+    
     color: #0096CA;
-    text-align: left;
+    text-align: center;
     font-size: 20px;
     font-weight: 500px;
     font-family: "Open Sans", Regular;
-    left: 27.5em;    
+    left: 20em;    
 
 }
 
 #pass{
-    position: relative;
+    
     text-align: center;
     font-size:20px;
     font-family: "Open Sans", Regular;
@@ -260,9 +284,9 @@ h4{
 }
 
 #semana{
-    position: relative;    
+       
     color: #0096CA;
-    text-align: left;
+    text-align: center;
     font-size: 20px;
     font-weight: 500px;
     font-family: "Open Sans", Regular;
@@ -271,25 +295,28 @@ h4{
 
 #day{
     text-align: center;
-    position: relative;
+    display: inline-block;
     font-size:20px;
     font-family: "Open Sans", Regular;
     padding: 10px;
     font-weight: 200px;
     background-color: white;
-    border-radius: 6px;
+    border-radius: 100px;
     border: 2px solid #0096CA;
     left: 31.5em;
+    height: 50px;
+    width: 60px;
     
 
 }
 
 #botones3{
     text-align: center;
+    
 }
 
 #boton5{
-    position: relative;
+    display: inline-block;
     text-align: center;
     border-radius: 70px;
     font-family: "Open Sans", Regular;
@@ -304,7 +331,7 @@ h4{
 }
 
 #boton6{
-    position: relative;
+    display: inline-block;
     text-align: center;
     border-radius: 70px;
     font-family: "Open Sans", Regular;
@@ -319,7 +346,21 @@ h4{
 }
 
 #boton7{
-    position: relative;
+    display: inline-block;
+    text-align: center;
+    border-radius: 70px;
+    font-family: "Open Sans", Regular;
+    font-size: 20px;
+    color: azure;
+    background-color:#0096CA;
+    border:none;
+    height: 70px;
+    width: 200px;
+    margin: 0.5em;
+}
+
+#boton8{
+    display: inline-block;
     text-align: center;
     border-radius: 70px;
     font-family: "Open Sans", Regular;
@@ -327,8 +368,31 @@ h4{
     color: azure;
     background-color:#0096CA;
     border:none;
-    height: 50px;
+    height:40px;
     width: 200px;
     margin: 0.5em;
     
+}
+
+#box{
+    
+    display: inline-block;
+    border: 2px solid #0096CA;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500px;
+    font-family: "Open Sans", Regular;
+    padding: 30px;
+    border-radius: 6px;
+    
+    
+}
+
+#resultado{
+    display: inline-block;
+    text-align: center;
+    
+    background-color: white;
+    border: none;
+    width: 100%
 }
