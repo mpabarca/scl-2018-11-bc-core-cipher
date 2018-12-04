@@ -94,27 +94,34 @@
     </div>
 
     <div id="cifrado">
-      <h2 id="contraseña">INGRESA TU CONTRASEÑA</h2>
-      
-      <br>
-      <input type="text" id="pass" value="">
-      <br>
-      <br>
-      <h2 id="semana">INGRESA EL DÍA</h2>
-      
-      <br>
-      <input type="number" name= "cantidad" id="day" min="1" max="31">
-      <br>
-      <br>
-      <div id="botones3">
-        <button onclick="cifrar()" id="boton5">CIFRAR</button>
-        <button onclick="descifrar()" id="boton6">DESCIFRAR</button>
+      <div id="ingresar">
+      <div id="ingresar1">
+        <h2 id="contraseña">INGRESA TU CONTRASEÑA</h2>
         <br>
-        <button onclick="volverInicio()" id="boton7">VOLVER A INICIO</button>
+        <input type="text" id="pass" value="">
+        
+      </div>
+      <div id="ingresar2">
+        <h2 id="semana">INGRESA EL DÍA DE HOY</h2>
+        <br>
+        <input type="number" name= "cantidad" id="day" min="1" max="31">
+        
+      
       </div>
     </div>
-    <div id="resultado">
+      <div id="botones3">
+        <br><br><br>
+        <button onclick="cifrar()" id="boton5">CIFRAR</button>
+        <button onclick="descifrar()" id="boton6">DESCIFRAR</button>
+        <button onclick="obtenerExplicacion()" id="boton7">COMO FUNCIONA</button>
+        <br>
+      </div>
+    </div>
+    <div id="resultado" style="display: none">
+      <br><br>
       <input type="text" id="box">
+      <br><br>
+      <button onclick="volverInicio()" id="boton8">VOLVER A INICIO</button>
       
     </div>
     

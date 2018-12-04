@@ -16,23 +16,24 @@ window.cipher = {
     //  result+= String.fromCharCode(ascii + offset);
   
       return result;
-    }
-  }
+    },
+  
     
 
-/*
+
   decode: (offset,password) => {
     let ascii;
     let result_decodificar="";
-    for (var i=0; i<result.length;i++){
+    let letra="";
+    for (let i=0; i<password.length;i++){
       
-      //let letra="";
+      posicion_ascii=result.charCodeAt(i);
       result_decodificar += String.fromCharCode(ascii - offset);
     }
     return result_decodificar
 
-  }
-  return result_decodificar
   
-};
-*/
+  }
+  
+  
+}
