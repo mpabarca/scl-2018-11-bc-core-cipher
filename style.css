@@ -8,6 +8,7 @@
 }
 #cifrado{ 
     display : none; 
+
 }
 
 
@@ -146,7 +147,7 @@ h3{
     
 }
 
-p1{    
+p{    
     color: #131617;
     font-size: 16px;    
     font-family: "Open Sans", Light; 
@@ -240,21 +241,24 @@ h4{
 
 #ingresar{
     text-align: center;
+    
 }
 
 #ingresar1{
     display: inline-block;
     text-align: center;
     margin-left: 0%;
+    margin-right: 2%;
     background-color: white;
     border: none;
-    width: 30%;
+    width: 28%;
 }
 
 #ingresar2{
     display: inline-block;
     text-align: center;
-    margin-right: 10%;
+    margin-left: 1%;
+    margin-right: 20%;
     background-color: white;
     border: none;
     
@@ -267,8 +271,8 @@ h4{
     font-size: 20px;
     font-weight: 500px;
     font-family: "Open Sans", Regular;
-    left: 20em;    
-
+    left: 20em;   
+    
 }
 
 #pass{
@@ -312,7 +316,8 @@ h4{
 
 #botones3{
     text-align: center;
-    
+    display: inline-block;
+    margin-left: 5%;
 }
 
 #boton5{
@@ -398,7 +403,7 @@ h4{
     font-family: "Open Sans", Regular;
     padding: 30px;
     border-radius: 6px;
-    
+     
     
 }
 
@@ -408,13 +413,20 @@ h4{
     
     background-color: white;
     border: none;
-    width: 100%
+    width: 70%;
+    margin-left: 14.5%;
 }
 
+
 #recordatorio1{
-    display: block;
-    width: 10%;
-    border: 1px solid #131617 ;
-    padding-left: 2.5em;
-    margin-left: 4%;
+    float: left;
+    display: inline-block;
+    width: 16%;
+    margin-left: 1.5%;
+    margin-top: 2%;
+    border: 0.5px solid #0096CA ;
+    border-radius: 6px;
+    padding: 1%;
+     ;
+    
 }

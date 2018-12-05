@@ -11,10 +11,10 @@ Document Object Model*/
 //let offset = document.getElementById("cajaOffset").value
 
 //id=presentacion
-let 
+let frase= document.getElementById("recordatorio1");
 
 function obtenerExplicacion() {
-    
+    frase.style.display="none";
     let div = document.getElementById("presentacion");
     div.style.display = "none";
     let div2 = document.getElementById("explicacion");
@@ -27,7 +27,7 @@ function obtenerExplicacion() {
 
 //id=explicacion
 function volverInicio(){
-
+    frase.style.display="none";
     let div = document.getElementById("presentacion");
     div.style.display = "block";
     let div2 = document.getElementById("explicacion");
@@ -41,7 +41,7 @@ function volverInicio(){
 
 //id=cifrado
 function comenzarApp(){
-    
+    frase.style.display="block";
     let div = document.getElementById("presentacion");
     div.style.display = "none";
     let div2 = document.getElementById("explicacion");
