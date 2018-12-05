@@ -22,7 +22,7 @@ function obtenerExplicacion() {
     div3.style.display = "none";
     let div4= document.getElementById("resultado");
     div4.style.display = "none";
-}
+}  
 
 //id=explicacion
 function volverInicio(){
@@ -62,7 +62,7 @@ function resultado (){
     div4.style.display = "block";
 }
 
-
+//Endode y Decode 
 function cifrar() {
     let password=document.getElementById("pass").value;
     let offset=document.getElementById("day").value;
@@ -72,10 +72,15 @@ function cifrar() {
 }
 
 function descifrar() {
-    let password=document.getElementById("pass").value;
-    let offset=document.getElementById("day").value;
-    let result =window.cipher.decode(offset,password);
-    document.getElementById("box").value = result;
+    let contraseña=document.getElementById("pass").value;
+    let desplazamiento=document.getElementById("day").value;
+    cipher.decode(desplazamiento,contraseña);
 }
 
+//Refrescar o Limpiar página
+function refrescarPagina(){
+    document.getElementById("pass").value = "";
+    document.getElementById("box").value = "";
+    document.getElementById("day").value = "";
+}
 
