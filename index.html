@@ -93,6 +93,12 @@
       </div>
     </div>
 
+    <div id="pantalla3">
+    <p1 id="recordatorio1" style="display: none">
+      Recuerda que tu <strong>CONTRASEÑA</strong> debe estar en mayusculas <br>
+      Si aun tienes dudas de qué hacer apreta el botón <strong>COMO FUNCIONA</strong>
+
+    </p1>
     <div id="cifrado">
       <div id="ingresar">
       <div id="ingresar1">
@@ -110,20 +116,25 @@
       </div>
     </div>
       <div id="botones3">
-        <br><br><br>
+        <br><br>
         <button onclick="cifrar()" id="boton5">CIFRAR</button>
         <button onclick="descifrar()" id="boton6">DESCIFRAR</button>
         <button onclick="obtenerExplicacion()" id="boton7">COMO FUNCIONA</button>
-        <br>
+        
       </div>
     </div>
+    
+    
     <div id="resultado" style="display: none">
-      <br><br>
+      <h2 id="semana">TU CONTRASEÑA CIFRADA</h2>
+      
       <input type="text" id="box">
       <br><br>
       <button onclick="volverInicio()" id="boton8">VOLVER A INICIO</button>
+      <button onclick="refrescarPagina()" id="boton9">LIMPIAR</button>
       
     </div>
+  </div>
     
     <script src="index.js"></script>
     <script src="cipher.js"></script>

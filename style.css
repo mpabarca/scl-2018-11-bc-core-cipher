@@ -11,7 +11,6 @@
 }
 
 
-
 .header {
     overflow: hidden;
     background-color: white;
@@ -373,6 +372,20 @@ h4{
     
 }
 
+#boton9{
+    display: inline-block;
+    text-align: center;
+    border-radius: 70px;
+    font-family: "Open Sans", Regular;
+    font-size: 18px;
+    color: azure;
+    background-color:#0096CA;
+    border:none;
+    height:40px;
+    width: 200px;
+    margin: 0.5em;
+}
+
 #box{
     
     display: inline-block;
@@ -394,4 +407,12 @@ h4{
     background-color: white;
     border: none;
     width: 100%
+}
+
+#recordatorio1{
+    display: block;
+    width: 10%;
+    border: 1px solid #131617 ;
+    padding-left: 2.5em;
+    margin-left: 4%;
 }
