@@ -11,6 +11,7 @@ Document Object Model*/
 //let offset = document.getElementById("cajaOffset").value
 
 //id=presentacion
+let 
 
 function obtenerExplicacion() {
     
@@ -40,6 +41,7 @@ function volverInicio(){
 
 //id=cifrado
 function comenzarApp(){
+    
     let div = document.getElementById("presentacion");
     div.style.display = "none";
     let div2 = document.getElementById("explicacion");
