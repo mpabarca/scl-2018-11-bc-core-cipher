@@ -20,9 +20,10 @@
   }
   
 .logo{
+    position: relative;
     width: 200px;
     height: 81px;
-    
+    left: 3.8%;
 }
 
   
@@ -36,10 +37,10 @@ h1{
 
 #texto1{
     
-    display: inline-block;
-    
+    display: inline-block;    
     float: left;
     margin-right: 4%;
+    margin-top: 1.4%;
     background-color: white;
     border: none;
     width: 47%;
@@ -88,11 +89,12 @@ p{
     width: 600px;
     height:430px;
     border-radius:100px;
+    
 }
 
 #img1 {    
     display: inline-block; 
-
+    
   }
 
 #botones1{
@@ -130,13 +132,14 @@ p{
 
 #texto2{
     
-    display: inline-block;
-    
+    display: inline-block;    
     float: right;
     margin-right: 4%;
+    margin-top: 0%;
+    margin-bottom: 0%;
     background-color: white;
     border: none;
-    width: 50%;
+    width: 47%;
     
   }
 
@@ -179,14 +182,15 @@ p{
 
 
 .hombre{
-    width: 600px;
-    height:430px;
+    width: 580px;
+    height:415px;
     border-radius:100px;
 }
 
 #img2 {    
     display: inline-block;
-    
+    margin-left: 4%;
+    margin-top: 2%;
     
 
   }
@@ -208,6 +212,8 @@ h4{
 
 #botones2{
     text-align: center;
+    margin-left: 50%;
+    margin-top: 0%;
 }
 
 #boton3{
