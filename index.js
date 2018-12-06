@@ -1,5 +1,6 @@
 
-//window onload carga primero todo el DOM 
+//window onload =() =>{
+//carga primero todo el DOM 
 /* Acá va tu código 
 DOM JS interactúa directamente con el html
 Document Object Model*/
@@ -11,8 +12,20 @@ Document Object Model*/
 //let offset = document.getElementById("cajaOffset").value
 
 //id=presentacion
+document.getElementById("boton2").addEventListener("click", obtenerExplicacion);
+document.getElementById("boton7").addEventListener("click", obtenerExplicacion);
+document.getElementById("boton4").addEventListener("click", volverInicio);
+document.getElementById("boton8").addEventListener("click", volverInicio);
+document.getElementById("boton1").addEventListener("click", comenzarApp);
+document.getElementById("boton3").addEventListener("click", comenzarApp);
+document.getElementById("boton5").addEventListener("click", cifrar);
+document.getElementById("boton6").addEventListener("click", descifrar);
+document.getElementById("boton9").addEventListener("click", refrescarPagina);
+document.getElementById("resultado").addEventListener("click", resultado);
+
 let frase= document.getElementById("recordatorio1");
 
+//explicacion
 function obtenerExplicacion() {
     frase.style.display="none";
     let div = document.getElementById("presentacion");
@@ -25,17 +38,18 @@ function obtenerExplicacion() {
     div4.style.display = "none";
 }  
 
-//id=explicacion
+
 function volverInicio(){
-    frase.style.display="none";
-    let div = document.getElementById("presentacion");
-    div.style.display = "block";
-    let div2 = document.getElementById("explicacion");
-    div2.style.display = "none";
-    let div3 = document.getElementById("cifrado");
-    div3.style.display = "none";
-    let div4= document.getElementById("resultado");
-    div4.style.display = "none";
+    location.reload();
+    //frase.style.display="none";
+    //let div = document.getElementById("presentacion");
+    //div.style.display = "block";
+    //let div2 = document.getElementById("explicacion");
+    //div2.style.display = "none";
+    //let div3 = document.getElementById("cifrado");
+    //div3.style.display = "none";
+    //let div4= document.getElementById("resultado");
+    //div4.style.display = "none";
 
 }
 
@@ -74,9 +88,10 @@ function cifrar() {
 }
 
 function descifrar() {
-    let contraseña=document.getElementById("pass").value;
-    let desplazamiento=document.getElementById("day").value;
-    cipher.decode(desplazamiento,contraseña);
+    let password=document.getElementById("pass").value;
+    let offset=document.getElementById("day").value;
+    let result =window.cipher.decode(offset,password);
+    document.getElementById("box").value=result;
 }
 
 //Refrescar o Limpiar página

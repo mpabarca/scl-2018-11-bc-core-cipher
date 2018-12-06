@@ -26,9 +26,8 @@ window.cipher = {
     let result_d="";
     let letra_d="";
     for (let i=0; i<password.length;i++){
-      let ascii_d=password.charCodeAt(i);
-      let nuevo_d=(ascii_d - 65 - parseInt(offset)) %26 +65;
-      
+      let ascii_d=password.charCodeAt(i);     
+      let nuevo_d=(ascii_d - 90 - parseInt(offset)) %26 +90;
       letra_d= String.fromCharCode(nuevo_d);
       result_d+=letra_d;
     }
