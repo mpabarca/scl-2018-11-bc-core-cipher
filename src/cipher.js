@@ -1,5 +1,5 @@
 window.cipher = {
-  encode: (offset,password) => {
+  encode: (password,offset) => {
     //let ascii='';
     let result="";
     let letra="";
@@ -21,7 +21,7 @@ window.cipher = {
     
 
 
-  decode: (offset,password) => {
+  decode: (password,offset) => {
     
     let result_d="";
     let letra_d="";

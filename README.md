@@ -2,10 +2,6 @@
 > Cipher Pass es tu ayudante para crear contraseñas seguras.
 Encripta de manera sencilla una misma contraseña, así debes recordar sólo una, que va cambiando cada semana o mes según tú lo prefieras.
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 Por el uso diario que le damos a las Redes Sociales es muy necesario contar con una contraseña segura y ser capaces de recordarla. 
 Ahora imagina tener una contraseña segura, pero para cada una de tus Redes Sociales. Todo un caos!
 Con Cipher Pass sólo necesitas recordar una palabra, cifrarla y así tener varias contraseñas a la vez
