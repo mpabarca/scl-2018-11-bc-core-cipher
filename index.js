@@ -82,7 +82,7 @@ function resultado (){
 function cifrar() {
     let password=document.getElementById("pass").value;
     let offset=document.getElementById("day").value;
-    let result =window.cipher.encode(offset,password);
+    let result =window.cipher.encode(password,offset);
     document.getElementById("box").value = result;
 
 }
@@ -90,7 +90,7 @@ function cifrar() {
 function descifrar() {
     let password=document.getElementById("pass").value;
     let offset=document.getElementById("day").value;
-    let result =window.cipher.decode(offset,password);
+    let result =window.cipher.decode(password,offset);
     document.getElementById("box").value=result;
 }
 
