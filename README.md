@@ -231,7 +231,7 @@ cipher.js | 100 | 100 | 100 | 100 | |
 
 Para usar **Cipher Pass** no es necesario instalar, descargar o ejecutar algún programa sólo ingresar al siguiente link :
 
-< LINK >
+https://mpabarca.github.io/scl-2018-11-bc-core-cipher/
 
   
   
